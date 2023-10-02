@@ -130,7 +130,7 @@ class AdalineSGD(object):
         return self
 
     def partial_fit(self, X, y):
-        """ Fit training data without reinitializing the weights"""
+        """Fit training data without reinitializing the weights"""
         if not self.w_initialized:
             self._initialize_weights(X.shape[1])
         if y.ravel().shape[0] > 1:

@@ -66,3 +66,6 @@ y = df.iloc[0:100, 4].values
 r = rgen.permutation(len(y))
 print(r)
 print(X[r])
+
+X = np.array([[1,2,3], [4,5,6]])
+print(np.ravel(X).shape[0])
